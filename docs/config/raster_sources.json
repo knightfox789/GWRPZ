@@ -1,0 +1,200 @@
+{
+  "gwrpz_class": {
+    "path": "../rasters/gwrpz_class.png",
+    "description": "Supplied final GWRPZ class raster",
+    "source_crs": "EPSG:32643",
+    "width": 789,
+    "height": 1066,
+    "image_coordinates_tl_tr_br_bl": [
+      [
+        72.7871642,
+        23.9005103
+      ],
+      [
+        73.0200753,
+        23.9036862
+      ],
+      [
+        73.0244488,
+        23.6143451
+      ],
+      [
+        72.7920513,
+        23.6112122
+      ]
+    ],
+    "source_nodata": 127.0,
+    "classes": {
+      "1": 50,
+      "2": 282268,
+      "3": 557690
+    },
+    "web_format": "RGBA PNG image source",
+    "resampling": "none during PNG conversion; source target-grid cells preserved"
+  },
+  "aquifer_score": {
+    "path": "../rasters/aquifer_score.png",
+    "description": "Phase 2B validated aquifer score",
+    "source_crs": "EPSG:32643",
+    "width": 789,
+    "height": 1066,
+    "image_coordinates_tl_tr_br_bl": [
+      [
+        72.7871642,
+        23.9005103
+      ],
+      [
+        73.0200753,
+        23.9036862
+      ],
+      [
+        73.0244488,
+        23.6143451
+      ],
+      [
+        72.7920513,
+        23.6112122
+      ]
+    ],
+    "source_nodata": 0.0,
+    "classes": {
+      "1": 50655,
+      "2": 84565,
+      "3": 704788
+    },
+    "web_format": "RGBA PNG image source",
+    "resampling": "none during PNG conversion; source target-grid cells preserved"
+  },
+  "slope_score": {
+    "path": "../rasters/slope_score.png",
+    "description": "Phase 2B validated slope score",
+    "source_crs": "EPSG:32643",
+    "width": 789,
+    "height": 1066,
+    "image_coordinates_tl_tr_br_bl": [
+      [
+        72.7871642,
+        23.9005103
+      ],
+      [
+        73.0200753,
+        23.9036862
+      ],
+      [
+        73.0244488,
+        23.6143451
+      ],
+      [
+        72.7920513,
+        23.6112122
+      ]
+    ],
+    "source_nodata": 0.0,
+    "classes": {
+      "1": 58144,
+      "2": 98634,
+      "3": 683230
+    },
+    "web_format": "RGBA PNG image source",
+    "resampling": "none during PNG conversion; source target-grid cells preserved"
+  },
+  "drainage_density_score": {
+    "path": "../rasters/drainage_density_score.png",
+    "description": "Phase 2B validated drainage-density score",
+    "source_crs": "EPSG:32643",
+    "width": 789,
+    "height": 1066,
+    "image_coordinates_tl_tr_br_bl": [
+      [
+        72.7871642,
+        23.9005103
+      ],
+      [
+        73.0200753,
+        23.9036862
+      ],
+      [
+        73.0244488,
+        23.6143451
+      ],
+      [
+        72.7920513,
+        23.6112122
+      ]
+    ],
+    "source_nodata": 0.0,
+    "classes": {
+      "1": 154667,
+      "2": 283097,
+      "3": 402244
+    },
+    "web_format": "RGBA PNG image source",
+    "resampling": "none during PNG conversion; source target-grid cells preserved"
+  },
+  "lineament_density_score": {
+    "path": "../rasters/lineament_density_score.png",
+    "description": "Phase 2B validated lineament-density score",
+    "source_crs": "EPSG:32643",
+    "width": 789,
+    "height": 1066,
+    "image_coordinates_tl_tr_br_bl": [
+      [
+        72.7871642,
+        23.9005103
+      ],
+      [
+        73.0200753,
+        23.9036862
+      ],
+      [
+        73.0244488,
+        23.6143451
+      ],
+      [
+        72.7920513,
+        23.6112122
+      ]
+    ],
+    "source_nodata": 0.0,
+    "classes": {
+      "1": 668115,
+      "2": 140762,
+      "3": 31131
+    },
+    "web_format": "RGBA PNG image source",
+    "resampling": "none during PNG conversion; source target-grid cells preserved"
+  },
+  "lulc_score": {
+    "path": "../rasters/lulc_score.png",
+    "description": "Phase 2B validated LULC score",
+    "source_crs": "EPSG:32643",
+    "width": 789,
+    "height": 1066,
+    "image_coordinates_tl_tr_br_bl": [
+      [
+        72.7871642,
+        23.9005103
+      ],
+      [
+        73.0200753,
+        23.9036862
+      ],
+      [
+        73.0244488,
+        23.6143451
+      ],
+      [
+        72.7920513,
+        23.6112122
+      ]
+    ],
+    "source_nodata": 0.0,
+    "classes": {
+      "1": 14540,
+      "2": 32481,
+      "3": 249283
+    },
+    "web_format": "RGBA PNG image source",
+    "resampling": "none during PNG conversion; source target-grid cells preserved"
+  }
+}

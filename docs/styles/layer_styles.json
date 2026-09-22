@@ -1,0 +1,70 @@
+{
+  "score_palette": {
+    "1": {
+      "label": "Low / score 1",
+      "color": "#BA493A"
+    },
+    "2": {
+      "label": "Moderate / score 2",
+      "color": "#E2AA3E"
+    },
+    "3": {
+      "label": "High / score 3",
+      "color": "#298079"
+    }
+  },
+  "gwrpz": {
+    "1": {
+      "label": "Low recharge potential",
+      "color": "#BA493A"
+    },
+    "2": {
+      "label": "Moderate recharge potential",
+      "color": "#E2AA3E"
+    },
+    "3": {
+      "label": "High recharge potential",
+      "color": "#298079"
+    }
+  },
+  "lulc": {
+    "Agriculture": "#C7B35A",
+    "Habitat": "#8B6F61",
+    "River Bed": "#87B7D5",
+    "Rocks": "#8D8D8D",
+    "Shrubs": "#A4B66A",
+    "Trees": "#477A4A",
+    "Waterbodies": "#4C8FBD"
+  },
+  "drainage": {
+    "line_color": "#4C8FBD",
+    "line_width_by_stream_order": {
+      "1": 0.7,
+      "2": 1.0,
+      "3": 1.4,
+      "4": 1.8,
+      "5": 2.2,
+      "8": 2.8
+    }
+  },
+  "lineaments": {
+    "line_color": "#7B5AA6",
+    "line_width": 1.4,
+    "line_dasharray": [
+      4,
+      3
+    ]
+  },
+  "villages": {
+    "fill_color": "#FFFFFF",
+    "fill_opacity": 0.0,
+    "line_color": "#666666",
+    "line_width": 0.8
+  },
+  "interventions": {
+    "point_radius": 5,
+    "stroke_color": "#FFFFFF",
+    "stroke_width": 1,
+    "categorical_field": "siting_alignment_spatial_setting"
+  }
+}

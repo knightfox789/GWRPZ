@@ -1,0 +1,364 @@
+{
+  "date": "2026-09-22",
+  "phase": "4",
+  "core_payload_bytes": 1129440,
+  "core_payload_mb": 1.077,
+  "core_payload_gzip_estimate_bytes": 482528,
+  "core_payload_gzip_estimate_mb": 0.46,
+  "asset_validation": [
+    {
+      "path": "vectors/villages.geojson",
+      "exists": true,
+      "bytes": 153037,
+      "gzip_bytes_estimate": 38774,
+      "sha256": "58f87e9bf7d8dea231602d0d61a01e9c7fb8867b92a86e6afbe123f94c6e7b89",
+      "parse_ok": true,
+      "feature_count": 50
+    },
+    {
+      "path": "vectors/aquifers.geojson",
+      "exists": true,
+      "bytes": 37522,
+      "gzip_bytes_estimate": 8759,
+      "sha256": "d98fceef2413abcafd20e801e883501f87eb85e4c4119a37a0c255a59685f37c",
+      "parse_ok": true,
+      "feature_count": 9
+    },
+    {
+      "path": "vectors/drainage_order.geojson",
+      "exists": true,
+      "bytes": 307292,
+      "gzip_bytes_estimate": 70643,
+      "sha256": "242f0f30b399b6b6c64b2e4bcf08a9cd56b25052728f6d88d909afe9f71408fa",
+      "parse_ok": true,
+      "feature_count": 796
+    },
+    {
+      "path": "vectors/lineaments.geojson",
+      "exists": true,
+      "bytes": 9640,
+      "gzip_bytes_estimate": 1910,
+      "sha256": "144771df0c8d9155c99bbfcc57603293e2ceebc1498d6c4223ddd417d1adf087",
+      "parse_ok": true,
+      "feature_count": 52
+    },
+    {
+      "path": "vectors/lulc.geojson",
+      "exists": true,
+      "bytes": 314994,
+      "gzip_bytes_estimate": 94099,
+      "sha256": "61010ddd90aeb2bfc407c8abcc4e3383a53c38126b8a33b0c66d6923f3c6a845",
+      "parse_ok": true,
+      "feature_count": 7
+    },
+    {
+      "path": "structures/interventions.geojson",
+      "exists": true,
+      "bytes": 26747,
+      "gzip_bytes_estimate": 2996,
+      "sha256": "1368f40ccb4e54a9fbb9064fb7ed79a98326915e21da05bd196f9e97a9277b81",
+      "parse_ok": true,
+      "feature_count": 58
+    },
+    {
+      "path": "rasters/gwrpz_class.png",
+      "exists": true,
+      "bytes": 66536,
+      "gzip_bytes_estimate": 66490,
+      "sha256": "57a8cf36022fa08507bbb4628817b413b6ff2981f97d9fa4b4795bc134af66db",
+      "parse_ok": true,
+      "image_size": [
+        789,
+        1066
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "rasters/aquifer_score.png",
+      "exists": true,
+      "bytes": 11703,
+      "gzip_bytes_estimate": 10006,
+      "sha256": "ba7bee6f80ce3979a3cb109a164360eb242620a803dd6a5e261afd13e8cb1574",
+      "parse_ok": true,
+      "image_size": [
+        789,
+        1066
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "rasters/slope_score.png",
+      "exists": true,
+      "bytes": 113934,
+      "gzip_bytes_estimate": 113844,
+      "sha256": "e58e971ddbe002a5653f80fe4be8abdd7df5f6e6ca24894baa07cf91eadee978",
+      "parse_ok": true,
+      "image_size": [
+        789,
+        1066
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "rasters/drainage_density_score.png",
+      "exists": true,
+      "bytes": 29599,
+      "gzip_bytes_estimate": 29109,
+      "sha256": "a7bf1b8e852422b5633a48f34d52c07a9b45e268dd16ab0c41590695ce28d202",
+      "parse_ok": true,
+      "image_size": [
+        789,
+        1066
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "rasters/lineament_density_score.png",
+      "exists": true,
+      "bytes": 14130,
+      "gzip_bytes_estimate": 12454,
+      "sha256": "9e3634cdc5502cd50f575a0b39a8cba3382c1259d7b6e061867e688463bde805",
+      "parse_ok": true,
+      "image_size": [
+        789,
+        1066
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "rasters/lulc_score.png",
+      "exists": true,
+      "bytes": 32174,
+      "gzip_bytes_estimate": 31107,
+      "sha256": "9ccd781ddc946c0f088af0a8aa7502956dc648116fc0a143bc36c954327371eb",
+      "parse_ok": true,
+      "image_size": [
+        789,
+        1066
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "config/raster_sources.json",
+      "exists": true,
+      "bytes": 4208,
+      "gzip_bytes_estimate": 609,
+      "sha256": "c368dc4d97a0f79512b34a6ef78da280316a37c28c43c5b81872bb46d256f2f0",
+      "parse_ok": true
+    },
+    {
+      "path": "config/data_catalog.json",
+      "exists": true,
+      "bytes": 6590,
+      "gzip_bytes_estimate": 1229,
+      "sha256": "b91e9c45fc08f7d50e9d2d46155407f836bb1cbac7c79030abbd8d3f6b713b23",
+      "parse_ok": true
+    },
+    {
+      "path": "styles/layer_styles.json",
+      "exists": true,
+      "bytes": 1334,
+      "gzip_bytes_estimate": 499,
+      "sha256": "2b6ca82ee55140da2b458321ba8f6991a47ab4896b1e351f0624ffb5e9e89e88",
+      "parse_ok": true
+    }
+  ],
+  "http_static_server_validation": [
+    {
+      "path": "vectors/villages.geojson",
+      "status": 200,
+      "content_type": "application/geo+json",
+      "bytes": 153037,
+      "fetch_ms_localhost": 16.79
+    },
+    {
+      "path": "vectors/aquifers.geojson",
+      "status": 200,
+      "content_type": "application/geo+json",
+      "bytes": 37522,
+      "fetch_ms_localhost": 1.32
+    },
+    {
+      "path": "vectors/drainage_order.geojson",
+      "status": 200,
+      "content_type": "application/geo+json",
+      "bytes": 307292,
+      "fetch_ms_localhost": 1.18
+    },
+    {
+      "path": "vectors/lineaments.geojson",
+      "status": 200,
+      "content_type": "application/geo+json",
+      "bytes": 9640,
+      "fetch_ms_localhost": 0.81
+    },
+    {
+      "path": "vectors/lulc.geojson",
+      "status": 200,
+      "content_type": "application/geo+json",
+      "bytes": 314994,
+      "fetch_ms_localhost": 0.88
+    },
+    {
+      "path": "structures/interventions.geojson",
+      "status": 200,
+      "content_type": "application/geo+json",
+      "bytes": 26747,
+      "fetch_ms_localhost": 0.74
+    },
+    {
+      "path": "rasters/gwrpz_class.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 66536,
+      "fetch_ms_localhost": 0.82
+    },
+    {
+      "path": "rasters/aquifer_score.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 11703,
+      "fetch_ms_localhost": 0.64
+    },
+    {
+      "path": "rasters/slope_score.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 113934,
+      "fetch_ms_localhost": 0.56
+    },
+    {
+      "path": "rasters/drainage_density_score.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 29599,
+      "fetch_ms_localhost": 0.52
+    },
+    {
+      "path": "rasters/lineament_density_score.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 14130,
+      "fetch_ms_localhost": 0.65
+    },
+    {
+      "path": "rasters/lulc_score.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 32174,
+      "fetch_ms_localhost": 0.85
+    },
+    {
+      "path": "config/raster_sources.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 4208,
+      "fetch_ms_localhost": 0.73
+    },
+    {
+      "path": "config/data_catalog.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 6590,
+      "fetch_ms_localhost": 0.96
+    },
+    {
+      "path": "styles/layer_styles.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 1334,
+      "fetch_ms_localhost": 1.24
+    }
+  ],
+  "vector_conversion_qa": [
+    {
+      "layer": "villages",
+      "features": 50,
+      "simplification_tolerance_m": 10,
+      "source_vertices": 7681,
+      "web_vertices": 6649,
+      "vertex_reduction_pct": 13.436,
+      "area_delta_pct": 0.00018,
+      "length_delta_pct": NaN,
+      "web_bytes": 153037,
+      "geometry_valid": true,
+      "web_crs": "EPSG:4326"
+    },
+    {
+      "layer": "aquifers",
+      "features": 9,
+      "simplification_tolerance_m": 10,
+      "source_vertices": 2121,
+      "web_vertices": 1611,
+      "vertex_reduction_pct": 24.045,
+      "area_delta_pct": -0.00085,
+      "length_delta_pct": NaN,
+      "web_bytes": 37522,
+      "geometry_valid": true,
+      "web_crs": "EPSG:4326"
+    },
+    {
+      "layer": "drainage_order",
+      "features": 796,
+      "simplification_tolerance_m": 5,
+      "source_vertices": 12079,
+      "web_vertices": 9872,
+      "vertex_reduction_pct": 18.271,
+      "area_delta_pct": NaN,
+      "length_delta_pct": -0.04674,
+      "web_bytes": 307292,
+      "geometry_valid": true,
+      "web_crs": "EPSG:4326"
+    },
+    {
+      "layer": "lineaments",
+      "features": 52,
+      "simplification_tolerance_m": 0,
+      "source_vertices": 131,
+      "web_vertices": 131,
+      "vertex_reduction_pct": 0.0,
+      "area_delta_pct": NaN,
+      "length_delta_pct": 0.0,
+      "web_bytes": 9640,
+      "geometry_valid": true,
+      "web_crs": "EPSG:4326"
+    },
+    {
+      "layer": "lulc",
+      "features": 7,
+      "simplification_tolerance_m": 10,
+      "source_vertices": 19014,
+      "web_vertices": 14307,
+      "vertex_reduction_pct": 24.755,
+      "area_delta_pct": 0.01659,
+      "length_delta_pct": NaN,
+      "web_bytes": 314994,
+      "geometry_valid": true,
+      "web_crs": "EPSG:4326"
+    },
+    {
+      "layer": "interventions",
+      "features": 58,
+      "simplification_tolerance_m": 0,
+      "source_vertices": 58,
+      "web_vertices": 58,
+      "vertex_reduction_pct": 0.0,
+      "area_delta_pct": NaN,
+      "length_delta_pct": NaN,
+      "web_bytes": 26747,
+      "geometry_valid": true,
+      "web_crs": "EPSG:4326"
+    }
+  ],
+  "responsive_harness_static_checks": {
+    "viewport_meta_present": true,
+    "mobile_media_query_present": true,
+    "svg_preserve_aspect_ratio_present": true,
+    "no_external_js_or_css": true
+  },
+  "visual_browser_smoke_test": {
+    "status": "PENDING_ENVIRONMENT",
+    "reason": "Installed headless Chromium hangs even on about:blank in this runtime; graphical browser rendering was not claimed as passed.",
+    "smoke_harness": "config/phase4_smoke_test.html"
+  }
+}

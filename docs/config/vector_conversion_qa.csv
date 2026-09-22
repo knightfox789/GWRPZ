@@ -1,0 +1,7 @@
+layer,features,simplification_tolerance_m,source_vertices,web_vertices,vertex_reduction_pct,area_delta_pct,length_delta_pct,web_bytes,geometry_valid,web_crs
+villages,50,10,7681,6649,13.436,0.00018,,153037,True,EPSG:4326
+aquifers,9,10,2121,1611,24.045,-0.00085,,37522,True,EPSG:4326
+drainage_order,796,5,12079,9872,18.271,,-0.04674,307292,True,EPSG:4326
+lineaments,52,0,131,131,0.0,,0.0,9640,True,EPSG:4326
+lulc,7,10,19014,14307,24.755,0.01659,,314994,True,EPSG:4326
+interventions,58,0,58,58,0.0,,,26747,True,EPSG:4326
