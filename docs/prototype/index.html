@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>From Mapping to Decision | Kaushal Gadariya</title>
-<meta name="description" content="A practitioner-focused interactive evidence story on groundwater recharge planning using GIS, MCDA, field knowledge, hydrogeological reasoning and community-informed decisions in Sabarkantha, Gujarat.">
+<meta name="description" content="An evidence-based groundwater recharge decision guide combining GIS, MCDA, hydrogeological interpretation, field knowledge and community-informed planning in Sabarkantha, Gujarat.">
 <meta name="author" content="Kaushal Gadariya">
 <meta name="theme-color" content="#0B1F33">
 <meta property="og:type" content="article">
 <meta property="og:title" content="From Mapping to Decision">
 <meta property="og:description" content="How GIS, field knowledge and community-informed judgement can support groundwater recharge planning in Sabarkantha, Gujarat.">
-<meta property="og:site_name" content="Kaushal Gadariya — Research Articles">
+<meta property="og:site_name" content="Water Security Intelligence — Kaushal Gadariya">
 <style>
 :root{
   --navy:#0B1F33;--navy2:#153149;--ink:#101820;--muted:#667580;--bg:#F7F6F1;--card:#ffffff;--line:#D8DEE2;
@@ -20,7 +20,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
 a{color:inherit}.top{position:sticky;top:0;z-index:30;background:rgba(247,246,241,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .topin{max-width:1380px;margin:auto;padding:10px 18px;display:flex;align-items:center;gap:18px}
-.brand{font-weight:800;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}.brandmark{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--bg);font-family:Georgia,serif;font-weight:700}.brandtext{color:var(--navy)}.nav{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}.brandlogo{width:38px;height:38px;object-fit:contain;display:block;flex:0 0 auto}.brandtext{color:var(--navy)}.nav{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
 .nav a{font-size:13px;text-decoration:none;padding:8px 10px;border-radius:8px}.nav a:hover{background:white}
 .hero{max-width:none;margin:0 auto;padding:82px max(24px,calc((100vw - 1220px)/2)) 54px;display:grid;grid-template-columns:1.25fr .75fr;gap:42px;align-items:end;background:var(--navy);color:var(--bg)}
 .kicker{text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:800;color:var(--green)}.hero .kicker{color:var(--aqua)}
@@ -28,8 +28,8 @@ h1{font-size:clamp(42px,7vw,88px);line-height:.96;letter-spacing:-.055em;margin:
 .lead{font-size:clamp(17px,1.8vw,22px);line-height:1.45;color:rgba(247,246,241,.82);max-width:760px}.quote{font-size:clamp(24px,3.5vw,46px);line-height:1.12;letter-spacing:-.03em;margin:14px 0 18px;color:#fff;max-width:950px}.herometa{display:flex;flex-wrap:wrap;gap:7px 15px;margin-top:24px;font-size:13px;color:rgba(247,246,241,.68)}.herometa span:not(:last-child)::after{content:"·";padding-left:15px;color:var(--aqua)}.herocta{display:inline-flex;margin-top:22px;color:var(--bg);text-decoration:none;border-bottom:1px solid rgba(82,199,217,.65);padding-bottom:4px;font-weight:700}
 .heroaside{border-left:3px solid var(--aqua);padding-left:18px;color:rgba(247,246,241,.74)}
 .heroaside strong{color:#fff}
-.modebar{max-width:1220px;margin:0 auto 30px;padding:0 24px;display:flex;gap:10px;flex-wrap:wrap}
-.pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;font-size:13px}
+.modebar{max-width:1220px;margin:0 auto 30px;padding:0 24px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 12px;font-size:13px;min-height:42px;display:flex;align-items:center;justify-content:center;text-align:center}
 .story{max-width:1380px;margin:0 auto;display:grid;grid-template-columns:minmax(330px,42%) minmax(480px,58%);gap:24px;padding:0 24px}
 .rail{padding-bottom:120px}
 .step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;margin:0 0 42px;box-shadow:0 8px 30px rgba(30,55,50,.035);transition:.2s}
@@ -37,13 +37,15 @@ h1{font-size:clamp(42px,7vw,88px);line-height:.96;letter-spacing:-.055em;margin:
 .stepno{font-size:12px;font-weight:800;color:var(--green);letter-spacing:.1em;text-transform:uppercase}
 h2{font-size:clamp(25px,3vw,38px);line-height:1.12;letter-spacing:-.035em;margin:7px 0 14px}
 .question{font-weight:750;color:#294f45;margin:12px 0}
-.note,.limit,.research{border-radius:11px;padding:13px 14px;margin:15px 0;font-size:14px}
+.note,.research{border-radius:11px;padding:13px 14px;margin:15px 0;font-size:14px}
 .note{background:var(--green2);border-left:3px solid var(--green)}
-.limit{background:#fff6df;border-left:3px solid var(--gold)}
 .research{background:#eef3f7;border-left:3px solid var(--blue)}
+.methodnote{margin:14px 0 0;border-top:1px solid var(--line);padding-top:10px;font-size:13px;color:var(--muted)}
+.methodnote summary{cursor:pointer;font-weight:700;color:var(--navy)}
+.methodnote p{margin:8px 0 0}
 .evidence{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:15px 0}
-.metric{border:1px solid var(--line);border-radius:10px;padding:10px;background:#fafcfb}
-.metric b{display:block;font-size:20px;line-height:1.1}
+.metric{border:1px solid var(--line);border-radius:10px;padding:11px 12px;background:#fafcfb;min-height:70px;display:flex;flex-direction:column;justify-content:center}
+.metric b{display:block;font-size:20px;line-height:1.1;margin-bottom:3px}
 .mapwrap{position:relative}.map{position:sticky;top:78px;height:calc(100vh - 100px);min-height:570px;background:#edf1ef;border:1px solid #d2dad6;border-radius:18px;overflow:hidden}
 .maphead{position:absolute;left:16px;top:16px;z-index:5;background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:12px;padding:10px 12px;max-width:70%}
 .maphead b{display:block}.maphead span{font-size:12px;color:var(--muted)}
@@ -72,14 +74,15 @@ footer{max-width:none;margin:50px auto 0;padding:28px max(24px,calc((100vw - 110
 .refdetails .refgrid{padding:0 14px 14px}.refgrid.compact .ref{padding:13px}
 
 @media(max-width:900px){
- .hero{grid-template-columns:1fr;padding-top:42px}.heroaside{border-left:0;border-top:3px solid var(--green);padding:14px 0 0}
+ .hero{grid-template-columns:1fr;padding-top:42px}.heroaside{border-left:0;border-top:3px solid var(--aqua);padding:14px 0 0}
+ .modebar{grid-template-columns:repeat(2,minmax(0,1fr))}
  .story{display:block;padding:0 12px}.mapwrap{position:sticky;top:55px;z-index:15;margin-bottom:18px}.map{position:relative;top:auto;height:44vh;min-height:300px;border-radius:14px}
  .rail{padding-bottom:30px}.step{margin-bottom:26px;padding:20px}.maphead{max-width:78%;font-size:13px}.facts{display:none}
  .evidence{grid-template-columns:1fr 1fr}.pathgrid{grid-template-columns:1fr 1fr}.refgrid{grid-template-columns:1fr}.aboutbox{grid-template-columns:1fr}
  .nav a:nth-child(n+4){display:none}
 }
 @media(max-width:560px){
- .topin{padding:8px 10px}.brand{font-size:14px}.hero{padding:30px 14px 25px}.modebar{padding:0 14px}.map{height:42vh}
+ .topin{padding:8px 10px}.brand{font-size:14px}.brandlogo{width:34px;height:34px}.hero{padding:30px 14px 25px}.modebar{padding:0 14px;grid-template-columns:1fr 1fr}.map{height:42vh}
  .evidence{grid-template-columns:1fr}.pathgrid{grid-template-columns:1fr}.maplegend{right:12px;left:12px;bottom:10px}.r3{display:none}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.step{transition:none}}
@@ -88,7 +91,7 @@ footer{max-width:none;margin:50px auto 0;padding:28px max(24px,calc((100vw - 110
 <body>
 <div class="top">
   <div class="topin">
-    <div class="brand"><span class="brandmark">KG</span><span class="brandtext">From Mapping to Decision</span></div>
+    <div class="brand"><img class="brandlogo" src="../assets/water-security-intelligence-logo.png" alt="Water Security Intelligence"><span class="brandtext">From Mapping to Decision</span></div>
     <nav class="nav">
       <a href="#story">Story</a><a href="#path">Decision Path</a><a href="#research">Method</a><a href="#about">About</a>
     </nav>
@@ -97,22 +100,20 @@ footer{max-width:none;margin:50px auto 0;padding:28px max(24px,calc((100vw - 110
 
 <section class="hero">
   <div>
-    <div class="kicker">Practitioner evidence story · Sabarkantha, Gujarat</div>
+    <div class="kicker">Evidence-based decision guide · Sabarkantha, Gujarat</div>
     <h1>From Mapping to Decision</h1>
     <div class="quote">“GIS helps validate the evidence. The decision still has to be made in the field, with the community.”</div>
-    <p class="lead">How GIS, MCDA, hydrogeological reasoning, field knowledge, engineering judgement and community-informed planning can work together for groundwater recharge.</p>
+    <p class="lead">A field-grounded look at how GIS, MCDA, hydrogeological interpretation, engineering checks and community knowledge can be combined when planning groundwater recharge structures.</p>
     <div class="herometa"><span>Kaushal Gadariya</span><span>Soil and Water Conservation Engineer</span><span>Groundwater · GIS · Watershed & NRM</span></div>
     <a class="herocta" href="#story">Follow the evidence ↓</a>
   </div>
   <aside class="heroaside">
-    <strong>What this is</strong><br>
-    An interactive evidence story and decision guide—not a universal siting recipe.<br><br><em>A map can narrow the search. The field completes the decision.</em><br><br>
-    <strong>What this is not</strong><br>
-    A claim that a high-potential GIS pixel is automatically a suitable construction site.
+    <strong>Evidence-based decision guide</strong><br>
+    The Sabarkantha case shows how mapped evidence can be checked against field conditions, community knowledge and implementation decisions.
   </aside>
 </section>
 <div class="modebar">
-  <span class="pill">58 validated structures</span><span class="pill">49 villages</span><span class="pill">5 spatial evidence layers</span><span class="pill">Field + community + engineering lens</span>
+  <span class="pill">58 structures analysed</span><span class="pill">49 villages represented</span><span class="pill">5 spatial evidence layers</span><span class="pill">Field + community + engineering</span>
 </div>
 
 <section class="story" id="story">
@@ -120,18 +121,18 @@ footer{max-width:none;margin:50px auto 0;padding:28px max(24px,calc((100vw - 110
 
 <article class="step active" data-state="context">
 <div class="stepno">01 · Field problem</div>
-<h2>A recharge map is not yet a recharge decision</h2>
+<h2>A recharge decision begins with the landscape</h2>
 <p class="question">What would I want to know before recommending a structure here?</p>
-<p>Two locations can sit close together and still differ in aquifer setting, slope, runoff behaviour, land cover, drainage position and constructability. GIS helps make those differences visible across a landscape.</p>
-<div class="note"><b>Practitioner note</b><br>A high-potential pixel can narrow the search. It cannot tell us whether the intended structure is technically appropriate, buildable or locally acceptable.</div>
+<p>Two nearby locations can differ in aquifer setting, slope, runoff behaviour, land cover, drainage position and constructability. GIS brings those differences into one spatial view and helps focus the field investigation.</p>
+<div class="note"><b>Practitioner note</b><br>A high-potential location becomes a candidate for closer investigation. Field conditions, the intended function of the structure, community knowledge and engineering feasibility shape the next decision.</div>
 </article>
 
 <article class="step" data-state="case">
 <div class="stepno">02 · Sabarkantha case</div>
-<h2>Use the real structures to interrogate the planning logic</h2>
-<p>The validated case dataset contains 58 structures across 49 villages. They were constructed on the ground through implementation processes that included community consultation and approval.</p>
-<div class="evidence"><div class="metric"><b>58</b>structures</div><div class="metric"><b>49</b>villages</div><div class="metric"><b>Grounded</b>in field implementation</div></div>
-<div class="limit">The structure dataset is not presented as a census of all recharge structures in the district, and spatial alignment is not presented as proof of performance.</div>
+<h2>Sabarkantha gives us a real set of sites to examine</h2>
+<p>The analysed intervention dataset covers 58 constructed structures across 49 villages. These locations let us compare mapped recharge potential with drainage position, structural context and field implementation experience.</p>
+<div class="evidence"><div class="metric"><b>58</b>structures</div><div class="metric"><b>49</b>villages</div><div class="metric"><b>Community</b>consultation and approval</div></div>
+<p>Site discussions, community inputs, access, technical feasibility and approval were part of the implementation process.</p>
 </article>
 
 <article class="step" data-state="landscape">
@@ -145,46 +146,47 @@ footer{max-width:none;margin:50px auto 0;padding:28px max(24px,calc((100vw - 110
 <div class="stepno">04 · Spatial evidence</div>
 <h2>Turn field questions into five spatial evidence layers</h2>
 <div class="evidence"><div class="metric"><b>30%</b>Aquifer</div><div class="metric"><b>20%</b>Slope</div><div class="metric"><b>20%</b>Drainage density</div><div class="metric"><b>15%</b>Lineament density</div><div class="metric"><b>15%</b>LULC</div></div>
-<p>Each layer is useful because it answers a practical question about storage, movement, runoff, infiltration or structural context—not because GIS software happens to contain that layer.</p>
+<p>Each layer represents a field question about groundwater storage, runoff, infiltration or structural setting. Together they provide a consistent way to compare conditions across the landscape.</p>
 </article>
 
 <article class="step" data-state="mcda">
 <div class="stepno">05 · GIS-MCDA</div>
-<h2>MCDA structures judgement. It does not remove judgement.</h2>
+<h2>MCDA makes the judgement explicit</h2>
 <p><b>Weighted model:</b> 0.30 Aquifer + 0.20 Slope + 0.20 Drainage Density + 0.15 Lineament Density + 0.15 LULC.</p>
-<p>MCDA makes assumptions visible: what matters, how it is scored and how strongly it contributes. Those assumptions still need technical reasoning and context.</p>
-<div class="research"><b>Research bridge</b><br>GIS-MCDA and managed-aquifer-recharge literature shows wide variation in criteria, weighting and validation approaches. That is a reason for transparency—not for copying one model everywhere.</div>
+<p>The weights record how the five evidence layers were combined. The value of MCDA is that these assumptions can be seen, checked and revisited as better local evidence becomes available.</p>
+<div class="research"><b>Research context</b><br>Managed-aquifer-recharge studies use different criteria and weights because hydrogeology, intervention type and planning context vary from place to place. The method therefore needs a clear local rationale.</div>
 </article>
 
 <article class="step" data-state="gwrpz">
 <div class="stepno">06 · Potential map</div>
-<h2>Read GWRPZ as potential, not permission</h2>
-<p>The supplied final GWRPZ raster is used as the final class reference. Low, Moderate and High describe relative recharge potential.</p>
-<div class="limit"><b>Important limitation</b><br>The complete historical Class 1/2/3 break rule could not be uniquely reconstructed from the preserved workflow. The article should say that plainly.</div>
+<h2>GWRPZ narrows the search area</h2>
+<p>The final GWRPZ map groups the landscape into Low, Moderate and High relative recharge-potential classes. In the planning process, this becomes a screening layer for deciding where closer field investigation is worthwhile.</p>
+<details class="methodnote"><summary>Method note</summary><p>The supplied final GWRPZ raster remains the class reference. Reconstruction of the preserved five-input workflow reproduced the upper class transition approximately, while the complete historical Class 1/2/3 break rule remains unresolved.</p></details>
 </article>
 
 <article class="step" data-state="hydro">
 <div class="stepno">07 · Hydrological position</div>
-<h2>The interesting part begins after the potential map</h2>
+<h2>Drainage position changes the meaning of a potential zone</h2>
 <div class="evidence"><div class="metric"><b>34</b>Order 1</div><div class="metric"><b>12</b>Order 2</div><div class="metric"><b>79.3%</b>Order 1–2</div></div>
-<p>Under the reproducible nearest-network rule, 46 of 58 structures are associated with Order 1–2 drainage. Nearest mapped stream distance ranges from 1.3 to 986.2 m, with a median of 41.7 m.</p>
-<div class="limit">No structure point literally intersects the supplied drainage lines. The correct wording is <b>nearest mapped stream order</b>.</div>
+<p>For each structure, the analysis takes the order of the nearest mapped drainage segment and retains the point-to-line distance. Forty-six of the 58 structures are associated with Order 1–2 drainage; the median distance to the mapped network is 41.7 m.</p>
+<details class="methodnote"><summary>How stream order was assigned</summary><p>Structure points and drainage lines come from separate mapped datasets, so the analysis uses a reproducible nearest-network relationship and retains the distance for interpretation.</p></details>
 </article>
 
 <article class="step" data-state="lineament">
 <div class="stepno">08 · Structural context</div>
-<h2>A lineament is not a yes/no answer</h2>
-<div class="evidence"><div class="metric"><b>0/58</b>direct intersections</div><div class="metric"><b>27.4 m</b>minimum distance</div><div class="metric"><b>1,209.5 m</b>median distance</div></div>
-<p>The reproducible relationship is distance to the nearest mapped lineament. Distance alone does not prove active fracture connectivity, transmissivity, recharge pathway or structure performance.</p>
-<div class="note"><b>Hydrogeological judgement matters.</b><br>A GIS overlay can indicate where to investigate. It cannot replace fracture verification in the field.</div>
+<h2>Use lineaments to guide where to investigate</h2>
+<div class="evidence"><div class="metric"><b>27.4 m</b>closest mapped lineament</div><div class="metric"><b>1,209.5 m</b>median distance</div><div class="metric"><b>5,177.5 m</b>farthest distance</div></div>
+<p>Mapped lineaments can indicate structural discontinuities such as fractures or fault zones. Where these features are open and hydraulically connected, they can provide preferential pathways for groundwater movement and recharge. Their value in planning is to highlight structural zones that deserve closer field investigation around a candidate site.</p>
+<div class="note"><b>Hydrogeological judgement matters.</b><br>A site may lie beside a mapped lineament rather than directly on it. Field observation and subsurface understanding determine whether the nearby structural feature is relevant to recharge at that location.</div>
+<details class="methodnote"><summary>Method note</summary><p>In the supplied geometries, none of the 58 intervention points coincides exactly with a lineament polyline. The analysis therefore uses nearest-lineament distance as the reproducible spatial relationship, without imposing an undocumented proximity threshold.</p></details>
 </article>
 
 <article class="step" data-state="structures">
 <div class="stepno">09 · Existing structures</div>
-<h2>What do the 58 constructed structures reveal?</h2>
+<h2>The 58 structures show how the evidence comes together</h2>
 <div class="evidence"><div class="metric"><b>26</b>Moderate GWRPZ</div><div class="metric"><b>32</b>High GWRPZ</div><div class="metric"><b>0</b>Low GWRPZ</div></div>
-<p>A conservative combined spatial-setting summary places 46 structures in an upper-catchment recharge setting, 5 in a storage-oriented moderate-potential setting and 7 in higher-order high-potential settings requiring review.</p>
-<div class="limit">These categories describe spatial context. They are not a performance score or engineering approval.</div>
+<p>Combining GWRPZ with nearest stream order places 46 structures in an upper-catchment recharge setting, 5 in a storage-oriented moderate-potential setting and 7 in higher-order high-potential settings requiring review.</p>
+<p>These settings are used to compare siting context. Field observations and monitoring evidence are considered separately when discussing outcomes.</p>
 </article>
 
 <article class="step" data-state="decision">
@@ -192,7 +194,7 @@ footer{max-width:none;margin:50px auto 0;padding:28px max(24px,calc((100vw - 110
 <h2>Bring the map back to the field</h2>
 <p>Screen → Read → Interpret → Match → Consult → Verify → Engineer → Decide.</p>
 <p>Community consultation, local knowledge, land/access, site feasibility and approval belong in the decision pathway alongside spatial evidence.</p>
-<div class="note"><b>Closing principle</b><br>“GIS helps validate the evidence. The decision still has to be made in the field, with the community.”<br><small>Use GIS to make the field visit smarter—not to eliminate the field visit.</small></div>
+<div class="note"><b>Closing principle</b><br>“GIS helps validate the evidence. The decision still has to be made in the field, with the community.”<br><small>Use GIS to make the field visit more focused and better informed.</small></div>
 </article>
 
 </div>
@@ -245,23 +247,22 @@ footer{max-width:none;margin:50px auto 0;padding:28px max(24px,calc((100vw - 110
 <section class="about" id="about">
 <div class="aboutbox">
 <div>
-<div class="kicker" style="color:#a8d4c4">Practitioner lens</div>
-<h2 style="color:white">About the work behind the article</h2>
-<p>Kaushal Gadariya is a Soil and Water Conservation Engineer working across groundwater, watershed and natural-resource management. His postgraduate research examined identification of potential sites for groundwater recharge structures using MCDA, remote sensing and GIS. He has continued applying and refining this field–GIS decision approach in professional work since 2019.</p>
-<p><b>Research-grounded. Field-linked. Decision-oriented.</b></p>
+<div class="kicker" style="color:#a8d4c4">Author</div>
+<h2 style="color:white">Kaushal Gadariya</h2>
+<p><b>Soil and Water Conservation Engineer</b></p>
+<p>Kaushal works across groundwater, watershed and natural-resource management. His postgraduate research focused on identifying potential groundwater recharge sites using MCDA, remote sensing and GIS. Since 2019, he has continued applying this work in field planning and spatial analysis, linking mapped evidence with hydrogeology, engineering checks and community decision processes.</p>
 <div class="authorlinks"><a href="https://www.linkedin.com/in/kaushal-gadariya-670221b1/" rel="me noopener">LinkedIn</a><a href="https://knightfox789.github.io/kaushal-gadariya-portfolio/" rel="noopener">Portfolio</a></div>
 </div>
 <div class="cta">
 <h3>Working on a similar groundwater or NRM question?</h3>
-<p>The framework shown here is a decision approach, not a universal recipe. Applying it to a new geography requires local data, hydrogeological interpretation, field verification and context-specific judgement.</p>
+<p>The approach shown here can be adapted to other geographies when local data, hydrogeological interpretation and field verification are brought together.</p>
 <a href="https://www.linkedin.com/in/kaushal-gadariya-670221b1/" rel="noopener">Discuss a technical collaboration</a>
-<a href="https://knightfox789.github.io/kaushal-gadariya-portfolio/" rel="noopener">Explore applied work</a>
 </div>
 </div>
 </section>
 
 <footer>
-Kaushal Gadariya · Research Articles · Phase 5 UX prototype v0.4 · Evidence values are from the validated Sabarkantha project analysis. Production GIS, final copy and outcome evidence remain subject to the project gates.
+Kaushal Gadariya · Research Articles · Phase 5 UX prototype v0.5 · Evidence values are from the validated Sabarkantha project analysis. Production GIS, final copy and outcome evidence remain subject to the project gates.
 </footer>
 
 <script>
@@ -274,7 +275,7 @@ const states={
  gwrpz:["Recharge potential","Final supplied GWRPZ raster"],
  hydro:["Add hydrological position","Nearest mapped stream order"],
  lineament:["Add structural context","Nearest mapped lineament"],
- structures:["Interrogate the structures","58 validated structure points"],
+ structures:["Interrogate the structures","58 structure locations"],
  decision:["Return to the field","GIS + community + engineering judgement"]
 };
 const steps=[...document.querySelectorAll(".step")];
