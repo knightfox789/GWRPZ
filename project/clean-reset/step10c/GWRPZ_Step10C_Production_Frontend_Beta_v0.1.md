@@ -42,3 +42,7 @@ The beta embeds only Step 9 sanitized public fields. Raw coordinates are never p
 - desktop/mobile responsive rules included;
 - reduced-motion rules included;
 - methods, references, acknowledgement, note and author footer included.
+
+## GitHub branch
+
+The beta is staged on `knightfox789/GWRPZ` branch `clean-reset-v1` at `docs/preview-v1/index.html`. The branch is three commits ahead of `main`; the public root has not been replaced.
