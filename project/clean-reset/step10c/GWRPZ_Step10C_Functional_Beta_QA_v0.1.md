@@ -34,7 +34,7 @@ PASS.
 
 - branch: `clean-reset-v1`
 - base: `main` at `6f6a4ac60ca11fae2341bf9894a8064a45a162d3`
-- branch comparison after Step 10C staging: **3 commits ahead / 0 behind**
+- branch comparison after Step 10C staging: **5 commits ahead / 0 behind**
 - preview path: `docs/preview-v1/index.html`
 - existing Phase-4 raster assets are reused on the branch for V02/V03; all other Step 9 data required by the preview remain embedded in the preview artifact
 - `main` and the current GitHub Pages root remain unchanged
@@ -67,3 +67,6 @@ The approved Master Plan recommended Astro and MapLibre. The Step 10C functional
 **GATE P4: PASS.**
 
 Exact next phase: **STEP 10D — Integrated QA and Release Candidate.**
+
+
+Draft review PR: `https://github.com/knightfox789/GWRPZ/pull/1`
