@@ -7,6 +7,14 @@ Interactive groundwater recharge planning web article for the Sabarkantha case s
 - GitHub Pages: https://knightfox789.github.io/GWRPZ/
 - Phase 4 GIS smoke test: https://knightfox789.github.io/GWRPZ/config/phase4_smoke_test.html
 
+## Phase 5 review
+
+- Phase 5 UX prototype: https://knightfox789.github.io/GWRPZ/prototype/
+- Content architecture: `project/phase5/Web_Article_Content_Architecture_v0.1.md`
+- Interaction specification: `project/phase5/Interaction_Specification_v0.1.md`
+
+Gate 5 remains pending user approval of the story structure and interactions.
+
 ## Repository role
 
 This repository is the testing and deployment target for the validated GWRPZ web article.
