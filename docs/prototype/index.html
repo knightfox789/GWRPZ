@@ -59,6 +59,11 @@ linear-gradient(135deg,#e6ece8,#f4efe2)}
 .refgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.ref{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}.ref small{color:var(--muted)}
 .aboutbox{background:#173f5f;color:white;border-radius:18px;padding:30px;display:grid;grid-template-columns:1fr .75fr;gap:30px}.aboutbox p{color:#e4edf2}.cta a{display:inline-block;text-decoration:none;background:white;color:#173f5f;padding:10px 14px;border-radius:9px;font-weight:800;margin:5px 5px 5px 0}
 footer{max-width:1100px;margin:50px auto;padding:24px;color:var(--muted);font-size:13px}
+.refdetails{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.refdetails summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;justify-content:space-between;align-items:center}
+.refdetails summary::-webkit-details-marker{display:none}.refdetails summary span{font-size:22px;color:var(--green);transition:.2s}.refdetails[open] summary span{transform:rotate(45deg)}
+.refdetails .refgrid{padding:0 14px 14px}.refgrid.compact .ref{padding:13px}
+
 @media(max-width:900px){
  .hero{grid-template-columns:1fr;padding-top:42px}.heroaside{border-left:0;border-top:3px solid var(--green);padding:14px 0 0}
  .story{display:block;padding:0 12px}.mapwrap{position:sticky;top:55px;z-index:15;margin-bottom:18px}.map{position:relative;top:auto;height:44vh;min-height:300px;border-radius:14px}
@@ -86,12 +91,12 @@ footer{max-width:1100px;margin:50px auto;padding:24px;color:var(--muted);font-si
 <section class="hero">
   <div>
     <div class="kicker">Practitioner evidence story · Sabarkantha, Gujarat</div>
-    <h1>A map can narrow the search. The field completes the decision.</h1>
+    <h1>GIS helps validate the evidence. The decision still has to be made in the field, with the community.</h1>
     <p class="lead">How GIS, MCDA, hydrogeological reasoning, field knowledge, engineering judgement and community-informed planning can work together for groundwater recharge.</p>
   </div>
   <aside class="heroaside">
     <strong>What this is</strong><br>
-    An interactive evidence story and decision guide—not a universal siting recipe.<br><br>
+    An interactive evidence story and decision guide—not a universal siting recipe.<br><br><em>A map can narrow the search. The field completes the decision.</em><br><br>
     <strong>What this is not</strong><br>
     A claim that a high-potential GIS pixel is automatically a suitable construction site.
   </aside>
@@ -177,7 +182,7 @@ footer{max-width:1100px;margin:50px auto;padding:24px;color:var(--muted);font-si
 <h2>Bring the map back to the field</h2>
 <p>Screen → Read → Interpret → Match → Consult → Verify → Engineer → Decide.</p>
 <p>Community consultation, local knowledge, land/access, site feasibility and approval belong in the decision pathway alongside spatial evidence.</p>
-<div class="note"><b>Closing principle</b><br>Use GIS to make the field visit smarter—not to eliminate the field visit.</div>
+<div class="note"><b>Closing principle</b><br>“GIS helps validate the evidence. The decision still has to be made in the field, with the community.”<br><small>Use GIS to make the field visit smarter—not to eliminate the field visit.</small></div>
 </article>
 
 </div>
@@ -212,16 +217,19 @@ footer{max-width:1100px;margin:50px auto;padding:24px;color:var(--muted);font-si
 
 <section class="refs" id="research">
 <div class="kicker">Research & method</div>
-<h2>Selected research behind the decision framework</h2>
-<p>These studies provide context for GIS-MCDA, recharge-potential mapping and managed aquifer recharge. They do not replace the Sabarkantha evidence.</p>
-<div class="refgrid">
-<div class="ref"><b>Malczewski (2006)</b><br>GIS-based multicriteria decision analysis: a survey of the literature.<br><small>GIS-MCDA foundation · DOI 10.1080/13658810600661508</small></div>
-<div class="ref"><b>Sallwey et al. (2019)</b><br>Suitability maps for managed aquifer recharge: a review of MCDA studies.<br><small>MAR suitability review · DOI 10.1139/er-2018-0069</small></div>
-<div class="ref"><b>Rahman et al. (2013)</b><br>Spatial multicriteria analysis + groundwater modelling for MAR site ranking.<br><small>Hydrogeological verification · DOI 10.1016/j.jenvman.2013.03.023</small></div>
-<div class="ref"><b>Aju et al. (2021)</b><br>Suitable sites and structures for artificial groundwater recharge, South India.<br><small>Indian recharge-structure context · DOI 10.1016/j.hydres.2021.04.001</small></div>
-<div class="ref"><b>Kadam et al. (2020)</b><br>Recharge potential zones using geospatial and MCDA technologies, Western India.<br><small>Regional context · DOI 10.1007/s42452-020-2079-7</small></div>
-<div class="ref"><b>Dillon et al. (2019)</b><br>Sixty years of global progress in managed aquifer recharge.<br><small>Wider MAR context · DOI 10.1007/s10040-018-1841-z</small></div>
+<h2>References when you want to go deeper</h2>
+<p>The evidence story stays in the foreground. Selected research is available on demand.</p>
+<details class="refdetails">
+<summary><b>References & further reading</b><span>+</span></summary>
+<div class="refgrid compact">
+<div class="ref"><b>Malczewski (2006)</b><br><small>GIS-MCDA foundation · DOI 10.1080/13658810600661508</small></div>
+<div class="ref"><b>Sallwey et al. (2019)</b><br><small>MAR suitability review · DOI 10.1139/er-2018-0069</small></div>
+<div class="ref"><b>Rahman et al. (2013)</b><br><small>Spatial MCDA + groundwater modelling · DOI 10.1016/j.jenvman.2013.03.023</small></div>
+<div class="ref"><b>Aju et al. (2021)</b><br><small>Artificial recharge structures, South India · DOI 10.1016/j.hydres.2021.04.001</small></div>
+<div class="ref"><b>Kadam et al. (2020)</b><br><small>Recharge potential, Western India · DOI 10.1007/s42452-020-2079-7</small></div>
+<div class="ref"><b>Dillon et al. (2019)</b><br><small>Global managed aquifer recharge context · DOI 10.1007/s10040-018-1841-z</small></div>
 </div>
+</details>
 </section>
 
 <section class="about" id="about">
@@ -242,7 +250,7 @@ footer{max-width:1100px;margin:50px auto;padding:24px;color:var(--muted);font-si
 </section>
 
 <footer>
-Phase 5 revised UX prototype v0.2 · Evidence values are from the validated Sabarkantha project analysis. Production GIS, final copy and outcome evidence remain subject to the project gates.
+Phase 5 revised UX prototype v0.3 · Evidence values are from the validated Sabarkantha project analysis. Production GIS, final copy and outcome evidence remain subject to the project gates.
 </footer>
 
 <script>
