@@ -45,7 +45,7 @@ The beta embeds only Step 9 sanitized public fields. Raw coordinates are never p
 
 ## GitHub branch
 
-The beta is staged on `knightfox789/GWRPZ` branch `clean-reset-v1` at `docs/preview-v1/index.html`. The branch is five commits ahead of `main`; the public root has not been replaced.
+The beta is staged on `knightfox789/GWRPZ` branch `clean-reset-v1` at `docs/preview-v1/index.html`. The Step 10C commits are isolated on this branch; the public root has not been replaced.
 
 
 Draft review PR: `https://github.com/knightfox789/GWRPZ/pull/1`
