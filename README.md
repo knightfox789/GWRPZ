@@ -1,19 +1,28 @@
 # GWRPZ — From Mapping to Decision
 
-Interactive groundwater recharge planning web article for the Sabarkantha case study.
+Interactive groundwater recharge evidence story grounded in the Sabarkantha study and the professional work of Kaushal Gadariya, Soil and Water Conservation Engineer.
 
-## Live testing
+## Live technical testing
 
 - GitHub Pages: https://knightfox789.github.io/GWRPZ/
 - Phase 4 GIS smoke test: https://knightfox789.github.io/GWRPZ/config/phase4_smoke_test.html
 
-## Phase 5 review
+## Phase 5 narrative reset
 
-- Phase 5 UX prototype: https://knightfox789.github.io/GWRPZ/prototype/
-- Content architecture: `project/phase5/Web_Article_Content_Architecture_v0.1.md`
-- Interaction specification: `project/phase5/Interaction_Specification_v0.1.md`
+The earlier Phase 5 UX prototypes are retained as archived design experiments and are **not the controlling direction**.
 
-Gate 5 remains pending user approval of the story structure and interactions.
+Current controlling Phase 5 documents:
+
+- `project/phase5-reset/Professional_Legacy_Story_Architecture_v1.0.md`
+- `project/phase5-reset/Visual_Storyboard_Professional_Legacy_v1.0.md`
+- `project/phase5-reset/Professional_Audience_Brand_Brief_v1.0.md`
+- `project/phase5-reset/GWRPZ_Phase5_Narrative_Reset_QA_v1.0.md`
+
+Current rule:
+
+**Story first → visuals second → UX third.**
+
+No replacement Phase 5 prototype should be built until the professional legacy story, visual storyboard and audience/brand brief are approved.
 
 ## Repository role
 
@@ -24,6 +33,8 @@ Current project state:
 - Phase 3 spatial evidence register: complete
 - Phase 4 web-data package: deployed
 - Gate 4: deployment and artifact integrity passed; visual desktop/mobile smoke confirmation remains pending
+- Phase 5: narrative reset package complete; Gate 5 reopened pending story/visual/audience approval
+- Phase 6: not started
 
 ## Deployment structure
 
@@ -33,6 +44,7 @@ Current project state:
 - `docs/rasters/` — categorical PNG overlays
 - `docs/config/` — data metadata, QA and smoke-test harness
 - `docs/styles/` — layer styling / legend configuration
+- `project/phase5-reset/` — controlling narrative-reset documents
 
 Scientific controls:
 - supplied final `GWRPZ_Class.tif` remains the final-class reference;
