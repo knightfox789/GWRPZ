@@ -27,6 +27,18 @@ The functional beta was executed in headless Chromium by injecting the self-cont
 - console/page errors: **0**
 - horizontal overflow: **False**
 
+
+## GitHub staging
+
+PASS.
+
+- branch: `clean-reset-v1`
+- base: `main` at `6f6a4ac60ca11fae2341bf9894a8064a45a162d3`
+- branch comparison after Step 10C staging: **3 commits ahead / 0 behind**
+- preview path: `docs/preview-v1/index.html`
+- existing Phase-4 raster assets are reused on the branch for V02/V03; all other Step 9 data required by the preview remain embedded in the preview artifact
+- `main` and the current GitHub Pages root remain unchanged
+
 ## Gate P4 checklist
 
 - all Story Lock article sections render — PASS
