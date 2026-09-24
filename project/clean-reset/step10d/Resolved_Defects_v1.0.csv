@@ -1,0 +1,8 @@
+defect_id,domain,severity,finding,status,resolution
+D10D-001,Accessibility,Major,Secondary slate text contrast below WCAG AA,RESOLVED,Darkened slate token and re-audited with zero text-contrast failures
+D10D-002,Accessibility,Major,Four generated select controls lacked accessible names,RESOLVED,Added explicit aria-labels
+D10D-003,Accessibility,Major,V09 keyboard-focusable DIV controls lacked button semantics,RESOLVED,Converted V09 controls to native buttons with aria-pressed
+D10D-004,Accessibility,Minor,Litholog map targets were 14 px,RESOLVED,Increased to 24×24 px and retained equivalent dropdown
+D10D-005,Accessibility,Minor,Toggle state used aria-selected on ordinary buttons,RESOLVED,Changed to aria-pressed
+D10D-006,Accessibility,Minor,Ochre arrow/feedback contrast was marginal,RESOLVED,Darkened arrow treatment and feedback text
+D10D-007,GIS/Web alignment,Major,Branch preview temporarily referenced older Phase-4 raster files,RESOLVED,Replaced branch preview with self-contained Step-9 raster payload
