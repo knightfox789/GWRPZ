@@ -1,0 +1,32 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS,production_audit_status
+TAB NAME: GWRPZ_Article_Claim_Traceability_v1.0.csv>,PASS
+index,content_id,section,claim_summary,pe_ids,claim_status,evidence_basis,PASS
+0,C001,Where the enquiry began,"2021 M.Tech thesis title, Panam Basin; RS/GIS/MCDA/AHP and six thematic inputs",PE-005; PE-006,FACT / QUALIFIED,2021 thesis title/abstract and claim register,PASS
+1,C002,Where the enquiry began,201 candidate locations; structure counts; structure-specific criteria and ground truthing,PE-006; PE-008,HISTORICAL / QUALIFIED,2021 thesis; keep historical,PASS
+2,C003,Where the enquiry began,Thesis recognised need for detailed hydrometeorological/hydrological/hydrogeological investigation,PE-007; PE-009,FACT + INTERPRETATION,Thesis and learning-evolution synthesis,PASS
+3,C004,Spatial hypothesis,Five GWRPZ factors and weights,PE-010; PE-011,FACT,Accepted GIS QA,PASS
+4,C005,Spatial hypothesis,Interpretive role of the five factor families,PE-010; PE-016; PE-019,FACT / INTERPRETATION,GWRPZ framework,PASS
+5,C006,Spatial hypothesis,Authoritative final GWRPZ raster; decision-support interpretation,PE-013; PE-019; PE-014,FACT / INTERPRETATION / QUALIFIED,Supplied final raster; historical break partially unrecovered,PASS
+6,C007,Implemented sites,122 source records; 2 unresolved excluded; 120 interventions / 109 sites,PE-020; PE-021,QUALIFIED FACT,Step 6 publication cohort,PASS
+7,C008,Implemented sites,52 High / 68 Moderate / 0 Low; portfolio uses wider evidence set,PE-030; PE-031,FACT + INTERPRETATION,Final GWRPZ samples,PASS
+8,C009,Implemented sites,Drainage order and distance context,PE-040; PE-041; PE-042; PE-043,FACT + INTERPRETATION,Step 6 spatial recomputation,PASS
+9,C010,Implemented sites,Lineament-distance context and structural interpretation,PE-044; PE-045,FACT + INTERPRETATION,Step 6 spatial recomputation,PASS
+10,C011,Opportunity,Different site opportunity families,PE-050; PE-066,PRACTITIONER LOGIC / INTERPRETATION,Field logic + matrix synthesis,PASS
+11,C012,Opportunity,Recharge Borewell field logic and mapped evidence,PE-051; PE-060; PE-061; PE-132,PRACTITIONER LOGIC + FACT,Field logic + Step 4,PASS
+12,C013,Opportunity,Pond deepening/widening function and mapped evidence,PE-053; PE-062,PRACTITIONER LOGIC + FACT,Field logic + Step 6,PASS
+13,C014,Opportunity,Checkdam/Nala and New Checkdam drainage context,PE-054; PE-055; PE-064; PE-065,PRACTITIONER LOGIC + FACT,Field logic + Step 4,PASS
+14,C015,Opportunity,RRWHS roof + dry-well logic; Habitat context,PE-052; PE-063,PRACTITIONER LOGIC + FACT,Field logic + Step 6,PASS
+15,C016,Opportunity,Intervention matching; evidence roles differ by intervention,PE-050; PE-066; PE-132,INTERPRETATION,Matrix synthesis,PASS
+16,C017,Subsurface,19 primary lithologs; dates and drill-depth range/summary,PE-100; PE-101; PE-102,FACT,Primary litholog dataset,PASS
+17,C018,Subsurface,Logged lithology families and site variation,PE-103; PE-104,FACT + INTERPRETATION,Primary litholog intervals,PASS
+18,C019,Subsurface,19/19 linked to sites including Recharge Borewell; surface-to-subsurface bridge,PE-102; PE-104,FACT + INTERPRETATION,Step 5 linkage,PASS
+19,C020,Subsurface,Source flag Y retained without yield interpretation,PE-103,SOURCE RECORD LIMIT,Primary litholog public-data convention,PASS
+20,C021,Cross-section,Depth-to-elevation conversion and GIS context,PE-105,FACT,Hydrogeological guide,PASS
+21,C022,Cross-section,Six conceptual traces; A–AA reconciled to six primary logs,PE-100; PE-106,FACT / QUALIFIED,Primary package + guide reconciliation,PASS
+22,C023,Cross-section,Conceptual traces; logs may be projected; discrete public representation,PE-107; PE-105,QUALIFIED / METHOD,Cross-section guide + Step 10A production decision,PASS
+23,C024,Monitoring,2024/25/26 authoritative rasters; common grid and six depth classes,PE-080,FACT,Recovered rasters,PASS
+24,C025,Monitoring,109-site class distribution and transition counts,PE-081; PE-082,FACT / QUALIFIED,Step 6 unique-site recomputation,PASS
+25,C026,Monitoring,Monitoring as feedback; causal attribution requires additional evidence,PE-083; PE-084; PE-085,INTERPRETATION / LIMIT,Integrated monitoring evidence,PASS
+26,C027,Reflection,Professional learning progression,PE-002; PE-004; PE-009; PE-104; PE-083,INTERPRETATION,Approved learning-evolution synthesis,PASS
+27,C028,Reflection,Map → Verify → Understand → Monitor synthesis,PE-004; PE-009; PE-019; PE-066; PE-104; PE-083,INTERPRETATION,Story Lock synthesis,PASS
+28,C029,Reflection,Locked practitioner quote and closing interpretation,PE-003; PE-019; PE-132,POSITIONING / PRACTITIONER LOGIC,Story Lock quote,PASS
