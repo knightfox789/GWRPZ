@@ -1,53 +1,46 @@
 # GWRPZ — From Mapping to Decision
 
-Interactive groundwater recharge evidence story grounded in the Sabarkantha study and the professional work of Kaushal Gadariya, Soil and Water Conservation Engineer.
+Interactive groundwater-recharge evidence article by **Kaushal Gadariya, Soil and Water Conservation Engineer**.
 
-## Live technical testing
+## Live article
 
-- GitHub Pages: https://knightfox789.github.io/GWRPZ/
-- Phase 4 GIS smoke test: https://knightfox789.github.io/GWRPZ/config/phase4_smoke_test.html
+https://knightfox789.github.io/GWRPZ/
 
-## Phase 5 narrative reset
+## Current production state
 
-The earlier Phase 5 UX prototypes are retained as archived design experiments and are **not the controlling direction**.
+- clean-reset article: **published**
+- public article baseline: **120 interventions / 109 unique sites**
+- GWRPZ implementation split: **68 Moderate / 52 High**
+- primary litholog profiles: **19**
+- representative A–AA section logs: **6**
+- groundwater monitoring: **June 2024 / June 2025 / June 2026**
+- public frontend: static HTML/CSS/JavaScript/SVG
+- GitHub Pages deployment root: `docs/`
 
-Current controlling Phase 5 documents:
+## Repository roles
 
-- `project/phase5-reset/Professional_Legacy_Story_Architecture_v1.0.md`
-- `project/phase5-reset/Visual_Storyboard_Professional_Legacy_v1.0.md`
-- `project/phase5-reset/Professional_Audience_Brand_Brief_v1.0.md`
-- `project/phase5-reset/GWRPZ_Phase5_Narrative_Reset_QA_v1.0.md`
+- `main` — deployable production state
+- `docs/` — current public GitHub Pages output
+- `project/clean-reset/` — clean-reset project, QA and handover records
+- `release-v1.0.x` — published release snapshot branches
+- `legacy-pre-clean-reset-2026-09-24` — pre-clean-reset public archive
 
-Current rule:
+## Maintenance
 
-**Story first → visuals second → UX third.**
+Start with:
 
-No replacement Phase 5 prototype should be built until the professional legacy story, visual storyboard and audience/brand brief are approved.
+- `project/clean-reset/step10f/GWRPZ_Final_Handover_Index_v1.0.md`
+- `project/clean-reset/step10f/GWRPZ_Maintenance_Update_Guide_v1.0.md`
+- `project/clean-reset/step10f/GWRPZ_Public_Data_Regeneration_Guide_v1.0.md`
 
-## Repository role
+Scientific/source authority remains in the project Library and the authoritative clean-reset registers. The published website is an output, not the source of truth.
 
-This repository is the testing and deployment target for the validated GWRPZ web article.
+## Deployment
 
-Current project state:
-- Phase 2 GIS QA and methodology reconstruction: complete
-- Phase 3 spatial evidence register: complete
-- Phase 4 web-data package: deployed
-- Gate 4: deployment and artifact integrity passed; visual desktop/mobile smoke confirmation remains pending
-- Phase 5: narrative reset package complete; Gate 5 reopened pending story/visual/audience approval
-- Phase 6: not started
+`.github/workflows/pages.yml` deploys `docs/` on pushes to `main` that modify `docs/**` or the Pages workflow.
 
-## Deployment structure
+## Update rule
 
-- `docs/` — GitHub Pages deployment root
-- `docs/vectors/` — browser-safe GeoJSON vectors
-- `docs/structures/` — validated intervention GeoJSON
-- `docs/rasters/` — categorical PNG overlays
-- `docs/config/` — data metadata, QA and smoke-test harness
-- `docs/styles/` — layer styling / legend configuration
-- `project/phase5-reset/` — controlling narrative-reset documents
-
-Scientific controls:
-- supplied final `GWRPZ_Class.tif` remains the final-class reference;
-- historical lineament binary flags are not treated as literal intersections;
-- nearest-stream and nearest-lineament relationships retain their documented limitations;
-- siting alignment is not presented as measured performance.
+**Editorial change → patch release.**  
+**Data change → regenerate public-safe data and rerun QA.**  
+**Method/story change → reopen the relevant clean-reset evidence/story phases.**
