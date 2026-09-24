@@ -1,0 +1,13 @@
+{
+  "project": "From Mapping to Decision",
+  "release_candidate": "v1.0",
+  "step": "10D",
+  "gate_p5": "PASS",
+  "publication_baseline": {"interventions": 120, "unique_sites": 109},
+  "subsurface_subset": {"litholog_profiles": 19, "section_A_AA_logs": 6},
+  "critical_defects_open": 0,
+  "step9_public_data_hash_match": true,
+  "step10b_article_source_hash_match": true,
+  "github_preview_path": "docs/preview-v1/index.html",
+  "deployment_rule": "Do not promote to the public root until Step 10E deployed-URL verification."
+}
