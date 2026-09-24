@@ -1,0 +1,170 @@
+{
+  "project": "From Mapping to Decision",
+  "step": "10E",
+  "publication_version": "v1.0",
+  "live_url": "https://knightfox789.github.io/GWRPZ/",
+  "repository": "knightfox789/GWRPZ",
+  "merge_commit": "07b261b271806da9a1bb8c8558938c8de2d49732",
+  "pull_request": 1,
+  "pages_workflow_run_id": 35957623561,
+  "pages_workflow_conclusion": "success",
+  "pages_artifact_id": 10791595106,
+  "pages_artifact_digest": "sha256:1be44bc4ab0f06f3f706e8470b2b434d839896aad4d0b3ada397b6cb5c93d88a",
+  "deployed_index": {
+    "bytes": 613004,
+    "sha256": "fda70f14e4b0dae5d213b0fb22f3b6c35caf29b3e0766a92c7c30142d6ff4464",
+    "git_blob_sha1": "749165c396b09cd5cf82881f0cec77b22005254b"
+  },
+  "main_docs_index_blob_sha1": "749165c396b09cd5cf82881f0cec77b22005254b",
+  "blob_integrity_match": true,
+  "pre_release_archive_branch": "legacy-pre-clean-reset-2026-09-24",
+  "release_snapshot_branch": "release-v1.0.0",
+  "deployed_file_count": 29,
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Web_GIS_Data_Manifest_v0.1.md",
+      "bytes": 9167,
+      "sha256": "26b0c5eade596ef96c6deb501c4736852e6bb3d07157b97e117551777e1d0e2b"
+    },
+    {
+      "path": "assets/water-security-intelligence-logo.png",
+      "bytes": 1018717,
+      "sha256": "914ea171a95941512c39436bca9a3bbe03815eacb4e533a0c02a849d2597642e"
+    },
+    {
+      "path": "config/Phase4_Build_Web_Data.py",
+      "bytes": 963,
+      "sha256": "1d0a29e6c67c9540cd002f6fe21a2aec58b5b1c6a1a8dce5836bb32244f8a638"
+    },
+    {
+      "path": "config/Phase4_Web_Data_QA_Metrics_2026-09-22.json",
+      "bytes": 9743,
+      "sha256": "6c145d5f87791818efc0430b2e0d471232db843994331f319065531658f7ef5c"
+    },
+    {
+      "path": "config/data_catalog.json",
+      "bytes": 6590,
+      "sha256": "b91e9c45fc08f7d50e9d2d46155407f836bb1cbac7c79030abbd8d3f6b713b23"
+    },
+    {
+      "path": "config/phase4_smoke_test.html",
+      "bytes": 5767,
+      "sha256": "d98892bc86bec0f70dc9ad7c7a0e26d717a9217995650d519ff4030a42808224"
+    },
+    {
+      "path": "config/raster_sources.json",
+      "bytes": 4208,
+      "sha256": "c368dc4d97a0f79512b34a6ef78da280316a37c28c43c5b81872bb46d256f2f0"
+    },
+    {
+      "path": "config/vector_conversion_qa.csv",
+      "bytes": 517,
+      "sha256": "55ffbc37a44398d1e297f84ecad003c9b30ea7e8cd53782eb8a4ab30fa1e7e03"
+    },
+    {
+      "path": "config/web_payload_hashes.csv",
+      "bytes": 1790,
+      "sha256": "49fee100b0430915b9d1011cf8c3c1d2653e11e6ffef863c9de8e014dd9a3f89"
+    },
+    {
+      "path": "index.html",
+      "bytes": 613004,
+      "sha256": "fda70f14e4b0dae5d213b0fb22f3b6c35caf29b3e0766a92c7c30142d6ff4464"
+    },
+    {
+      "path": "preview-v1/index.html",
+      "bytes": 612574,
+      "sha256": "f1562610fee8618356dbb281a8f93c43217eef979d86ea0e2a9ed49ee2c1983a"
+    },
+    {
+      "path": "prototype/index.html",
+      "bytes": 24347,
+      "sha256": "5370ced21f44d2f14bb7e2d0aaa7ca2ea3db8bde7c7b8c870dbfbc40eeddb1d0"
+    },
+    {
+      "path": "rasters/aquifer_score.png",
+      "bytes": 11703,
+      "sha256": "ba7bee6f80ce3979a3cb109a164360eb242620a803dd6a5e261afd13e8cb1574"
+    },
+    {
+      "path": "rasters/drainage_density_score.png",
+      "bytes": 29599,
+      "sha256": "a7bf1b8e852422b5633a48f34d52c07a9b45e268dd16ab0c41590695ce28d202"
+    },
+    {
+      "path": "rasters/gwrpz_class.png",
+      "bytes": 66536,
+      "sha256": "57a8cf36022fa08507bbb4628817b413b6ff2981f97d9fa4b4795bc134af66db"
+    },
+    {
+      "path": "rasters/lineament_density_score.png",
+      "bytes": 14130,
+      "sha256": "9e3634cdc5502cd50f575a0b39a8cba3382c1259d7b6e061867e688463bde805"
+    },
+    {
+      "path": "rasters/lulc_score.png",
+      "bytes": 32174,
+      "sha256": "9ccd781ddc946c0f088af0a8aa7502956dc648116fc0a143bc36c954327371eb"
+    },
+    {
+      "path": "rasters/slope_score.png",
+      "bytes": 113934,
+      "sha256": "e58e971ddbe002a5653f80fe4be8abdd7df5f6e6ca24894baa07cf91eadee978"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 82,
+      "sha256": "26d15c928247b2186d89186d7ffd76e46ccbf027fd898394accc1b764cedb69d"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 214,
+      "sha256": "f5925f806c43d72fa27eb81258e5520a0e78ffc3bbbfbc0a930c7effce1191ef"
+    },
+    {
+      "path": "social-preview.svg",
+      "bytes": 1604,
+      "sha256": "e977d435973b3e290637df28d56f0b21ed48466175ff9c5cd28aaa957fe6d03c"
+    },
+    {
+      "path": "structures/interventions.geojson",
+      "bytes": 26747,
+      "sha256": "1368f40ccb4e54a9fbb9064fb7ed79a98326915e21da05bd196f9e97a9277b81"
+    },
+    {
+      "path": "styles/layer_styles.json",
+      "bytes": 1334,
+      "sha256": "2b6ca82ee55140da2b458321ba8f6991a47ab4896b1e351f0624ffb5e9e89e88"
+    },
+    {
+      "path": "vectors/aquifers.geojson",
+      "bytes": 37522,
+      "sha256": "d98fceef2413abcafd20e801e883501f87eb85e4c4119a37a0c255a59685f37c"
+    },
+    {
+      "path": "vectors/drainage_order.geojson",
+      "bytes": 307292,
+      "sha256": "242f0f30b399b6b6c64b2e4bcf08a9cd56b25052728f6d88d909afe9f71408fa"
+    },
+    {
+      "path": "vectors/lineaments.geojson",
+      "bytes": 9640,
+      "sha256": "144771df0c8d9155c99bbfcc57603293e2ceebc1498d6c4223ddd417d1adf087"
+    },
+    {
+      "path": "vectors/lulc.geojson",
+      "bytes": 314994,
+      "sha256": "61010ddd90aeb2bfc407c8abcc4e3383a53c38126b8a33b0c66d6923f3c6a845"
+    },
+    {
+      "path": "vectors/villages.geojson",
+      "bytes": 153037,
+      "sha256": "58f87e9bf7d8dea231602d0d61a01e9c7fb8867b92a86e6afbe123f94c6e7b89"
+    }
+  ]
+}
