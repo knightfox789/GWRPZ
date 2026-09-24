@@ -3,23 +3,35 @@
 **Project:** From Mapping to Decision  
 **Live site:** https://knightfox789.github.io/GWRPZ/  
 **Repository:** `knightfox789/GWRPZ`  
-**Handover stage:** Step 10F
+**Step:** 10F  
+**Status:** **COMPLETE — FINAL HANDOVER READY**
 
-## 1. What is being handed over
+## 1. Final state
 
-A published, static, mobile-responsive groundwater-recharge evidence article with:
-- V01–V09 interactive evidence visuals;
-- sanitized public data embedded or referenced by the page;
-- GitHub Pages deployment workflow;
-- evidence/claim/source registers;
-- Story Lock;
+The clean-reset workflow is complete through Step 10F.
+
+The public article remains the approved v1.0.4 reader-facing build. Step 10F performed handover and repository cleanup without changing the article content.
+
+Final publication / housekeeping record:
+- Pages publication commit: `f6a33e68dcfde8b2e11531d5279bc3ded85e9c2e`
+- GitHub Pages run: `35978788805` — success
+- deployed `index.html` SHA-256: `643f1e75d3de00d47b93cce4b9a28d7dc3f3361337ac6a49797a0e4a713ebee3`
+- final release snapshot branch: `release-v1.0.5`
+
+## 2. What is handed over
+
+- published V01–V09 interactive article;
+- controlling source/claim/story records;
+- sanitized public-data package;
 - Master Plan;
 - Recovery Log;
 - maintenance/update guide;
 - public-data regeneration guide;
-- release manifests and hashes.
+- final deployment/handover record;
+- final release manifest;
+- release/rollback branches.
 
-## 2. Current controlling Library records
+## 3. Controlling Library records
 
 ### Evidence / story
 - `/GW Recharge/08_Project_Admin/GWRPZ_Authoritative_Source_and_Decision_Register_v1.4.md`
@@ -34,64 +46,71 @@ A published, static, mobile-responsive groundwater-recharge evidence article wit
 ### Public data
 - `/GW Recharge/05_Web_Data/Clean_Reset_v1/`
 
-### Releases / revisions
-- `/GW Recharge/06_Web_Article/Clean_Reset_v1/releases/`
-- `/GW Recharge/06_Web_Article/Clean_Reset_v1/revisions/`
+### Final handover
+- `/GW Recharge/06_Web_Article/Clean_Reset_v1/handover/Step10F_v1.0/`
 
-## 3. Repository roles
+## 4. Repository roles
 
 `main`
-: deployable production state.
-
-`release-v1.0.x`
-: immutable-by-convention snapshot branches for published patch versions.
-
-`legacy-pre-clean-reset-2026-09-24`
-: archive of the public site before the clean-reset replacement.
-
-`.github/workflows/pages.yml`
-: GitHub Pages deployment workflow.
+: current production + project-documentation state.
 
 `docs/`
-: deployed public root.
+: minimal GitHub Pages deployment root.
 
-`project/clean-reset/`
-: project documentation / handover records.
+`project/clean-reset/step10f/`
+: maintenance, regeneration and final handover records.
 
-## 4. Final production-root policy
+`release-v1.0.5`
+: final Step 10F release snapshot.
 
-After Step 10F housekeeping, `docs/` should contain only files required by the live article.
+`legacy-pre-clean-reset-2026-09-24`
+: archive of the pre-clean-reset public site.
 
-Legacy Phase-4 smoke-test files, old 58-record intervention output, old village/vector exports and obsolete prototypes should remain recoverable in Git history/legacy branches, but should not continue to ship in the current GitHub Pages artifact.
+## 5. Final deployment-root contents
 
-## 5. Update decision tree
+The verified Pages artifact contains only:
+1. `.nojekyll`
+2. `index.html`
+3. `assets/v08-overlay.svg`
+4. `social-preview.svg`
+5. `robots.txt`
+6. `sitemap.xml`
 
-**Only wording/layout changed?**  
-→ patch branch → browser QA → PR → release snapshot.
+Obsolete Phase-4/prototype outputs, the old 58-record structure export, and old village/vector files were removed from the active deployment root. They remain recoverable through Git history and archive/release references.
 
-**Numbers/data changed?**  
-→ source register → claim register → regenerate public data → privacy/GIS QA → rebuild affected visuals → integrated QA → release.
+## 6. Update decision tree
 
-**Method/story changed?**  
-→ reopen Story Lock and relevant clean-reset phases.
+**Wording/layout only**  
+→ patch branch → browser QA → PR → deploy → release snapshot.
 
-## 6. Rollback anchors
+**Evidence/data change**  
+→ source register → claim register → regenerate public-safe data → privacy/GIS QA → rebuild affected visual(s) → integrated QA → release.
 
-- pre-clean-reset archive: `legacy-pre-clean-reset-2026-09-24`
-- each published clean-reset state: `release-v1.0.x`
+**Method/story change**  
+→ reopen Story Lock and the relevant clean-reset phases.
 
-## 7. Known connector limitation
+## 7. Rollback anchors
 
-The available GitHub connector does not expose Git-tag creation. Release snapshot branches are therefore used as the machine-created release anchors in this workflow. If a formal Git tag is required, create it in GitHub manually at the final release commit.
+- `legacy-pre-clean-reset-2026-09-24`
+- `release-v1.0.0`
+- `release-v1.0.1`
+- `release-v1.0.2`
+- `release-v1.0.3`
+- `release-v1.0.4`
+- `release-v1.0.5`
 
-## 8. Handover acceptance
+## 8. Git-tag note
 
-Step 10F is complete when:
-- stale deployment-root artifacts are removed;
-- current live article remains unchanged in meaning/content;
-- latest Pages deployment succeeds;
-- deployed files/hashes are recorded;
-- maintenance guide is saved;
-- regeneration guide is saved;
-- Master Plan and Recovery Log are finalized;
-- final release snapshot branch is created.
+The available GitHub connector does not expose Git-tag creation. Release snapshot branches are therefore the machine-created release anchors. A formal tag can be added manually in GitHub if required.
+
+## 9. Restart rule
+
+For any future continuation, start from:
+1. this Final Handover Index;
+2. the latest Recovery Log;
+3. the Maintenance & Update Guide;
+4. the Public-Data Regeneration Guide.
+
+Do not restart from old Phase-4/Phase-5 prototype material.
+
+**Handover result: PASS.**
