@@ -1,0 +1,70 @@
+{
+  "project": "From Mapping to Decision",
+  "step": "10F",
+  "handover_version": "v1.0",
+  "publication_snapshot": "v1.0.5 (housekeeping/handover snapshot)",
+  "live_url": "https://knightfox789.github.io/GWRPZ/",
+  "repository": "knightfox789/GWRPZ",
+  "publication_commit": "f6a33e68dcfde8b2e11531d5279bc3ded85e9c2e",
+  "public_article_content_version": "v1.0.4",
+  "public_article_content_changed_in_step10f": false,
+  "github_pages_run_id": 35978788805,
+  "github_pages_artifact_id": 10799650267,
+  "github_pages_artifact_digest": "sha256:88a9df0fbebc5e1301de1964569d900f1c9c7ca8c01ade5c45ec45f476d7c8fb",
+  "production_index": {
+    "git_blob_sha1": "08ddaeba57d304f8952cc831f4c2b241906446ce",
+    "sha256": "643f1e75d3de00d47b93cce4b9a28d7dc3f3361337ac6a49797a0e4a713ebee3",
+    "bytes": 1718097
+  },
+  "deployed_file_count": 6,
+  "deployed_files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets/v08-overlay.svg",
+      "bytes": 186277,
+      "sha256": "2824531847bb4a72dbb0cefc05e25bfad694e3358d45e44aaa83e675cd03778f"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1718097,
+      "sha256": "643f1e75d3de00d47b93cce4b9a28d7dc3f3361337ac6a49797a0e4a713ebee3"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 82,
+      "sha256": "26d15c928247b2186d89186d7ffd76e46ccbf027fd898394accc1b764cedb69d"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 214,
+      "sha256": "f5925f806c43d72fa27eb81258e5520a0e78ffc3bbbfbc0a930c7effce1191ef"
+    },
+    {
+      "path": "social-preview.svg",
+      "bytes": 1604,
+      "sha256": "e977d435973b3e290637df28d56f0b21ed48466175ff9c5cd28aaa957fe6d03c"
+    }
+  ],
+  "removed_from_current_deployment": [
+    "old Phase-4 config/test files",
+    "old preview/prototype pages",
+    "old raster directory",
+    "old 58-record interventions.geojson",
+    "old village/vector exports",
+    "unused old logo and layer-style artifacts"
+  ],
+  "recovery_refs": [
+    "legacy-pre-clean-reset-2026-09-24",
+    "release-v1.0.0",
+    "release-v1.0.1",
+    "release-v1.0.2",
+    "release-v1.0.3",
+    "release-v1.0.4",
+    "release-v1.0.5"
+  ],
+  "git_tag_note": "Current connector does not expose Git-tag creation; release snapshot branches are used as release anchors."
+}
