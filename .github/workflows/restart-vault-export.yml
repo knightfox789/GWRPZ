@@ -1,0 +1,31 @@
+name: Restart Vault Repository Export
+
+on:
+  push:
+    branches:
+      - backup-export-v1.1-20260924
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact production repository snapshot
+        uses: actions/checkout@v4
+        with:
+          ref: f72f9bc5db770d787529e8d004b629d0b0513672
+          fetch-depth: 1
+
+      - name: Create source snapshot ZIP
+        run: |
+          zip -r GWRPZ_GitHub_main_f72f9bc5.zip . -x ".git/*"
+
+      - name: Upload repository snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: GWRPZ_GitHub_main_f72f9bc5
+          path: GWRPZ_GitHub_main_f72f9bc5.zip
+          if-no-files-found: error
+          retention-days: 30
